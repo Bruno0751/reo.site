@@ -12,11 +12,11 @@
 
         public function cadastrarPessoa($pessoa){
             try{
-                $statment = $this->connect->prepare("INSERT INTO pessoa(id_pessoa, nome_completo, senha) VALUES(?, ?, ?)");
+                $statment = $this->connect->prepare("INSERT INTO pessoa(id_pessoa, nome_completo, senha, cpf) VALUES(?, ?, ?,?)");
                 $statment->bindValue(1,$pessoa->codigo);
                 $statment->bindValue(2,$pessoa->nomeCompleto);
                 $statment->bindValue(3,$pessoa->senha);
-               
+                $statment->bindValue(4,$pessoa->cpf);
                 $statment->execute();
 
             }catch(PDOExeption $erro){
@@ -44,10 +44,24 @@
                 $id = $statment->fetchALL(PDO::FETCH_CLASS,'pessoa');
                 return $id;
             }catch(PDOException $erro){
-                echo "Erro ao Buscar" . $erro;
+                echo "Erro de ID" . $erro;
             }
         }
 
+        public function verificarCPFDaPessoa($cpf){
+            try{
+                $statment = $this->connect->prepare("SELECT cpf FROM pessoa WHERE cpf = ?");
+                $statment->bindValue(1, $cpf);
+                $statment->execute();
+        
+                $cpf = null;
+                $cpf = $statment->fetchALL(PDO::FETCH_CLASS,'pessoa');
+                return $cpf;
+            }catch(PDOException $erro){
+                echo "Erro de CPF" . $erro;
+            }
+        }
+        
         public function deletarPessoa($id){
             try{
                 $statment = $this->connect->prepare("DELETE FROM pessoa WHERE id_pessoa = ?");

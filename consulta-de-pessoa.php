@@ -90,6 +90,7 @@
                                 <th>Código</th>
                                 <th>Nome</th>
                                 <th>Senha</th>
+                                <th>CPF</th>
                                 <th>Exluir</th>
                                 <th>Alterar</th>
                             </tr>
@@ -99,6 +100,7 @@
                                 <th>Código</th>
                                 <th>Nome</th>
                                 <th>Senha</th>
+                                <th>CPF</th>
                                 <th>Exluir</th>
                                 <th>Alterar</th>
                             <tr>
@@ -110,6 +112,7 @@
                                     echo "<td>$linhas->id_pessoa</td>";
                                     echo "<td>$linhas->nome_completo</td>";
                                     echo "<td>$linhas->senha</td>";
+                                    echo "<td>$linhas->cpf </td>";
                                     echo "<td><a class='btn btn-danger' href='consulta-de-pessoa.php?id=$linhas->id_pessoa'>Excluir</a></td>";
                                     echo "<td><a class='btn btn-success' href='alterar-pessoa.php?id=$linhas->id_pessoa'>Alterar</a></td>";
                                 echo "</tr>";

@@ -51,6 +51,9 @@
                         <input type="text" placeholder="Senha" name="passwordSenhaPessoa" title="**[a...z ou A..Z ou 0...9] MIN..6 / MAX...20**" required pattern="^[A-ü,0-9]{6,20}$" class="form-control">
                     </div>
                     <div class="inp">
+                        <input type="text" placeholder="CPF" name="textCPF" title="**[0...9] MAX...15**" required pattern="^[0-9]{11,15}$" class="form-control">
+                    </div>
+                    <div class="inp">
                         <input type="submit" value="Cadatrar" name="cadastrar" class="btn btn-success">
                         <input type="reset" value="Limpar" name="limpar" class="btn btn-warning">
                     </div>
