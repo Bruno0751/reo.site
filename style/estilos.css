@@ -1,0 +1,109 @@
+body{
+    background-color: #715275 !important;
+}
+.inp{
+    margin: 10px 0.5%;
+}
+.navbar{
+    background-color: #eee;
+}
+.none{
+    display: none;
+}
+.tab{
+    background-color: #7c5d8e !important;
+}
+
+
+
+/*
+footer figure ul{
+	position: relative;
+	margin: 0 34%;
+	padding: 0;
+	display: flex;
+}
+footer figure ul li{
+	position: relative;
+	list-style: none;
+	width: 60px;
+	height: 60px;
+	margin: 0 30px;
+	transform: rotate(-30deg) skew(25deg);
+	background: #ccc;
+}
+footer figure ul li span{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #000;
+	transition: 0.5s;
+	display: flex !important;
+	align-items: center;
+	justify-content: center;
+	color: #ffffff;
+	font-size: 30px !important;
+}
+footer figure ul li:hover span:nth-child(5){
+	transform: translate(40px,-40px);
+	opacity: 1;
+}
+footer figure ul li:hover span:nth-child(4){
+	transform: translate(30px,-30px);
+	opacity: .8;
+}
+footer figure ul li:hover span:nth-child(3){
+	transform: translate(20px,-20px);
+	opacity: .6;
+}
+footer figure ul li:hover span:nth-child(2){
+	transform: translate(10px,-10px);
+	opacity: .4;
+}
+footer figure ul li:hover span:nth-child(1){
+	transform: translate(0,0);
+	opacity: .2;
+}
+footer figure ul li:nth-child(1) span{
+	background: #3b5999;
+}
+footer figure ul li:nth-child(2) span{
+	background-color: #55acee;
+}
+footer figure ul li:nth-child(3) span{
+	background-color: #e4405f;
+}
+footer figure ul li:nth-child(4) span{
+	background-color: #dd4b39;
+}
+footer figure ul li:nth-child(5) span{
+	background-color: #0077b5
+}
+/*smartphone no formato retrato*/
+@media screen and (max-width: 360px){
+	body{
+		background-color: #ffffff;
+	}
+}
+/*smartphone no paisagem*/
+@media screen and (max-width: 480px){
+    body{
+        background-color: #000000;
+    }
+}
+/*tablets no formato retrato*/
+@media screen and (max-width: 768px){
+    body{
+        background-color: cyan;
+    }
+}
+/*tablets no formato paisagem e alguns monitores mais antigos*/
+@media screen and (max-width: 960px){
+    body{
+        background-color: blue;
+    }
+}
+/*desktop com monitores wide screen*/
+@media screen and (max-width: 1200px){}
