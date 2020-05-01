@@ -19,9 +19,16 @@
         <link rel="icon" href="image/icone.png">
         <link rel="stylesheet" type="text/css" href="style/estilos.css">
         <link rel="stylesheet" href="css/bootstrap.min.css">
+        <!--
+        <link  href="vendor/twbs/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+        -->
 
         <script src="js/bootstrap.min.js"></script>
 		<script src="js/jquery-3.1.1.min.js"></script>
+        <!--
+        <script src="vendor/components/jquery/jquery.min.js"></script>
+        <script src="vendor/twbs/bootstrap/dist/js/bootstrap.min.js"></script>
+        -->
     </head>
     <body>
         <div class="container">
