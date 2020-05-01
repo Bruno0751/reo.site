@@ -12,11 +12,12 @@
 
         public function cadastrarCliente($cliente){
             try{
-                $statment = $this->connect->prepare("INSERT INTO cliente(id_cliente, nome_completo, senha, cd_pessoa) VALUES(?,?,?,?)");
+                $statment = $this->connect->prepare("INSERT INTO cliente(id_cliente, nome_completo, senha, cpf, cd_pessoa) VALUES(?, ?, ?, ?, ?)");
                 $statment->bindValue(1,$cliente->codigo);
                 $statment->bindValue(2,$cliente->nomeCompleto);
                 $statment->bindValue(3,$cliente->senha);
-                $statment->bindValue(4,$cliente->fk);         
+                $statment->bindValue(4,$cliente->cpf);
+                $statment->bindValue(5,$cliente->fk);         
                 $statment->execute();
 
             }catch(PDOExeption $erro){
@@ -43,6 +44,20 @@
                 $id = null;
                 $id = $statment->fetchALL(PDO::FETCH_CLASS,'cliente');
                 return $id;
+            }catch(PDOException $erro){
+                echo "Erro ao Buscar" . $erro;
+            }
+        }
+
+        public function verificarCPFDoCliente($cpf){
+            try{
+                $statment = $this->connect->prepare("SELECT cpf FROM cliente WHERE cpf = ?");
+                $statment->bindValue(1, $cpf);
+                $statment->execute();
+        
+                $cpf = null;
+                $cpf = $statment->fetchALL(PDO::FETCH_CLASS,'cliente');
+                return $cpf;
             }catch(PDOException $erro){
                 echo "Erro ao Buscar" . $erro;
             }

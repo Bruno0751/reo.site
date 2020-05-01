@@ -51,6 +51,9 @@
                         <input type="text" placeholder="Senha" name="passwordSenhaCliente" title="**[a...z ou A..Z ou 0...9] MIN..6 / MAX...20**" required pattern="^[A-ü,0-9]{6,23}$" class="form-control">
                     </div>
                     <div class="inp">
+                        <input type="text" placeholder="CPF" name="textCPF" title="**[0...9] MAX...15**" required pattern="^[0-9]{11,15}$" class="form-control">
+                    </div>
+                    <div class="inp">
                         <input type="number" placeholder="ID.Pes." name="numberIDPessoa" title="**[0...9] MAX...15**" required pattern="^[0-9]{1,4}$" class="form-control">
                     </div>
                     <div class="inp">

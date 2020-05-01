@@ -4,6 +4,7 @@
         private $codigo;
         private $nomeCompleto;
         private $senha;
+        private $cpf;
         private $fk;
 
         public function __construct(){}
@@ -22,6 +23,7 @@
             return nl2br("Identificação: $this->codigo
             Nome: $this->nomeCompleto
             Senha: $this->senha
+            CPF: $this->cpf
             FK: $this->fk");
         }
     }
