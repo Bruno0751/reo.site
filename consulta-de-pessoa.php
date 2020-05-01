@@ -138,6 +138,48 @@
                     ?>
                 </div>
             </section>
+            <footer>
+                <figure>
+                    <ul>
+                        <li>
+                          <a href="https://www.facebook.com/bruno.gresslerdasilveira.71">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span class="fa fa-facebook" aria-hidden="true"></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/brunao_gs/?hl=pt-br">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span class="fa fa-instagram" aria-hidden="true"></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span class="fa fa-twitter" aria-hidden="true"></span>
+                            </a>
+                        </li> 
+                        <li>
+                            <a href="https://www.linkedin.com/in/bruno-gressler-55151515a/">
+                              <span></span>
+                              <span></span>
+                              <span></span>
+                              <span></span>
+                              <span class="fa fa-linkedin-square" aria-hidden="true"></span>
+                            </a>
+                        </li>
+                    </ul>
+                </figure>
+            </footer>
         </div>
     </body>
 </html>

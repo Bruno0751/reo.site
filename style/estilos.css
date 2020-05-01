@@ -13,10 +13,19 @@ body{
 .tab{
     background-color: #7c5d8e !important;
 }
+footer{
+	height: auto;
+	width: 100%;
+	background-color: #432b4c;
+	padding: 21pt 0.6%;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
 
 
 
-/*
 footer figure ul{
 	position: relative;
 	margin: 0 34%;
