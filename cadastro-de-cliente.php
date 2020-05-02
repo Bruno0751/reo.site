@@ -12,6 +12,7 @@
         <link rel="icon" href="image/icone.png">
         <link rel="stylesheet" type="text/css" href="style/estilos.css">
         <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
         <!--
         <link  href="vendor/twbs/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
         -->
