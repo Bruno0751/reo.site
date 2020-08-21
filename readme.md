@@ -1,3 +1,3 @@
 leia-me
 
-* projeto de site com banco de dados MySQL
+* Este projeto não esta competo e portanto é apenas uma biblioteca
